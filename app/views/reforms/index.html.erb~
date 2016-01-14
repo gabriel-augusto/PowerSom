@@ -1,0 +1,15 @@
+<div class="header">
+  <div class="container">
+    <h1>Power Som</h1>
+  </div>
+</div>
+
+<div class="reforms">
+  <div class="container">
+    <%= link_to 'Receber novo alto falante', "reforms/new" %>
+    <% @reforms.each do |reform| %> 
+    <p class="content"><%= reform.client %></p> 
+    <p class="time"><%= reform.created_at %></p>
+    <% end %>
+  </div>
+</div>

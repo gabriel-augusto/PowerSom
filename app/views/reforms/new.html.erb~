@@ -1,0 +1,22 @@
+<div class="header">
+  <div class="container">
+    <h1>Power Som</h1>
+  </div>
+</div>
+
+<div class="reforms">
+  <div class="container">
+    <p> Receber alto falante </p>
+    <%= form_for(@reform) do |f| %>  
+    <div class="field"> 
+      <%= f.label :Cliente %><br> 
+      <%= f.text_field :client %>
+      <%= f.label :Descrição %><br> 
+      <%= f.text_field :description %> 
+    </div> 
+    <div class="actions"> 
+      <%= f.submit "Receber" %> 
+    </div> 
+    <% end %>
+  </div>
+</div>
