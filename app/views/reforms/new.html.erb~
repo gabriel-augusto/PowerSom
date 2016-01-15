@@ -1,21 +1,18 @@
-<div class="header">
-  <div class="container">
-    <h1>Power Som</h1>
-  </div>
-</div>
-
 <div class="reforms">
   <div class="container">
-    <p> Receber alto falante </p>
+    <h3> Receber alto falante </h3>
     <%= form_for(@reform) do |f| %>  
     <div class="field"> 
       <%= f.label :Cliente %><br> 
-      <%= f.text_field :client %>
+      <%= f.text_field :client %><br><br>
       <%= f.label :Descrição %><br> 
-      <%= f.text_field :description %> 
+      <%= f.text_field :description %><br><br>
     </div> 
     <div class="actions"> 
-      <%= f.submit "Receber" %> 
+      <!--<%= f.submit :class => "btn btn-lg btn-primary", "data-disable-with" => "Receber" %> -->
+      <%= button_tag(type: 'submit', class: "btn btn-lg btn-primary") do %>
+        <i class="icon-ok icon-white"></i> Receber
+      <% end %>
     </div> 
     <% end %>
   </div>
