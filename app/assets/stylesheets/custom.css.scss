@@ -3,6 +3,26 @@
 
 /* universal */
 
+.open-reforms{
+  min-height: 420px;
+}
+
+.well {
+  min-height: 240px;
+}
+
+.margin-special {
+  margin-top: 14px;
+}
+
+.glyphicon-ok {
+  color: green;
+}
+
+.glyphicon-remove {
+  color: red;
+}
+
 .btn a{
   color: #eee;
   font-size: 0.8em;
@@ -13,9 +33,13 @@
 }
 
 .jumbotron {
-  background-image: image-url("sound_waves.jpg");
-  height: 400px;
-  background-repeat: no-repeat;
+  height: 320px;
+  background: image-url("sound_waves.jpg") no-repeat;
+  background-size: cover;
+}
+
+.specialjum {
+  color:#fff;
   background-size: cover;
 }
 
@@ -24,7 +48,8 @@
 }
 
 body {
-  padding-top: 53px;
+  background-image: image-url("background.jpeg");
+  padding-top: 70px;
 }
 
 section {
@@ -97,18 +122,20 @@ p {
 /* footer */
 
 footer {
+  background-color: #333;
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
-  color: #777;
+  color: #aaa;
+  height: 150px;
 }
 
 footer a {
-  color: #555;
+  color: #ccc;
 }
 
 footer a:hover {
-  color: #222;
+  color: #fff;
 }
 
 footer small {

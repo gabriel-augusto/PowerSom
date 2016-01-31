@@ -16,8 +16,7 @@ ActiveRecord::Schema.define(version: 20160113211852) do
   create_table "reforms", force: :cascade do |t|
     t.string   "client"
     t.text     "description"
-    t.integer  "number"
-    t.date     "closed"
+    t.integer  "closed"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
