@@ -53,7 +53,9 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-  get 'reforms' => 'reforms#index'
-  get 'reforms/new' => 'reforms#new'
-  post 'reforms' => 'reforms#create'
+  root 'reforms#index'
+  get 'index' => 'reforms#index'
+  get 'index' => 'reforms#search', as: :search
+  get 'index' => 'index#close', as: :close
+  post 'index' => 'reforms#create', as: :create
 end
